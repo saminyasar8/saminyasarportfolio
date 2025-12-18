@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samin Yasar | Portfolio</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(255,255,255,0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #ff6b6b, #f06595);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        /* Hero */
+        .hero {
+            padding-top: 120px;
+            min-height: 100vh;
+        }
+
+        .hero h1 { font-size: 1.1rem; letter-spacing: 2px; }
+        .hero h2 { font-size: 3.5rem; font-weight: 700; }
+
+        .download-btn {
+            background: #d0e0ff;
+            padding: 12px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #333;
+            display: inline-block;
+        }
+
+        .download-btn:hover { background: #a0c0ff; }
+
+        .hero-image { position: relative; }
+
+        .blob-bg {
+            position: absolute;
+            inset: 50% auto auto 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 500px;
+            background: #c0d6ff;
+            border-radius: 50%;
+            opacity: 0.7;
+            z-index: -1;
+        }
+
+        .blob-small {
+            position: absolute;
+            top: -40px;
+            left: 60px;
+            width: 100px;
+            height: 100px;
+            background: #ffc0cb;
+            border-radius: 50%;
+        }
+
+        .person-img {
+            width: 400px;
+            max-width: 100%;
+            border-radius: 50% 50% 50% 0;
+        }
+
+        /* Section spacing */
+        section { padding: 100px 0; }
+
+        .services { background: linear-gradient(to bottom, #ffffff, #f8fbff); }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            height: 100%;
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .tech {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 2.4rem; }
+            .person-img { width: 300px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><div class="logo">S</div></a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <div class="container">
+ <div class="row align-items-center "> <div class="col-lg-6 text-lg-start text-center"> <h1 class="text-muted">HEY! I AM</h1> <h2>SAMIN YASAR !</h2> <p class="text-muted">Junior PHP Laravel Developer with hands-on experience in Laravel, REST API development, CRUD operations, authentication & authorization, and Vue.js integration. Passionate about building scalable backend systems and clean web applications.</p> <a href="#" class="download-btn">Download</a> </div> <div class="col-lg-6 text-center hero-image"> <div class="blob-bg"></div> <div class="blob-small"></div> <img src="https://scontent.fdac202-1.fna.fbcdn.net/v/t39.30808-6/596779084_1431939488655198_3581350769614957599_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGhAW7wSrodQxyI75gi405i4gcOlO2qX4HiBw6U7apfgaOfDO4x-5TMVWCCzudNFagc2SKVgSjX3jTmOkrjljqH&_nc_ohc=7nrGhQAP05EQ7kNvwGrhmqG&_nc_oc=Adl3Zqa6KAFtAaXD0tuvWShKFFkMFFrB8sHLfi0vY_eUruhFMw14WkKdYG59NizhKy8&_nc_zt=23&_nc_ht=scontent.fdac202-1.fna&_nc_gid=yQxXqknJZ5tExUAj3SOqFw&oh=00_AflgXspUZkTBGQ0YZRC_oqmiebxziAVusS95QoZEfJ30sA&oe=6949E787" alt="Karim EzZat" class="person-img"> </div> </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <div class="container text-center">
+        <h2 class="mb-4">About Me</h2>
+        <p class="text-muted">
+            I am a passionate PHP & Laravel developer with experience building RESTful APIs, inventory systems, and task management applications. I love clean code, scalable systems, and learning new technologies.</p>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h3 class="text-muted">MY SERVICES</h3>
+            <h2>I Can Make Awesome Things</h2>
+        </div>
+
+<div class="container"> <div class="row align-items-center g-5"> <div class="col-lg-12"> <div class="row g-4"> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"><i class="fas fa-globe"></i></div> <h4>Web Development</h4> <p>A complete web app solution for business</p> </div> </div> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"> <i class="fas fa-plug"></i> </div> <h4>REST API Development</h4> <p> Developed secure RESTful APIs using Laravel Sanctum & JWT. APIs tested and documented using Postman for frontend and third-party integration. </p> <span class="tech">Tech: Laravel, MySQL, Postman</span> </div> </div> <!-- E-commerce Application --> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"> <i class="fas fa-shopping-cart"></i> </div> <h4>E-commerce Web Application</h4> <p> Complete e-commerce platform with product, category, order, and user management. Secure admin panel with role-based access. </p> <span class="tech">Tech: Laravel, MySQL, Bootstrap, Vue.js</span> </div> </div> <!-- Blog Management --> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"> <i class="fas fa-blog"></i> </div> <h4>Blog Management System</h4> <p> SEO-friendly blogging platform with authentication, post management and comment system. </p> <span class="tech">Tech: Laravel, MySQL, Blade</span> </div> </div> <!-- Inventory Management --> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"> <i class="fas fa-warehouse"></i> </div> <h4>Inventory Management System</h4> <p> Stock, supplier and sales management system with full CRUD functionality and clean UI. </p> <span class="tech">Tech: Laravel, MySQL</span> </div> </div> <!-- Employee Management --> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"> <i class="fas fa-users"></i> </div> <h4>Employee Management System</h4> <p> Employee CRUD system with authentication & authorization, proper validation and error handling. </p> <span class="tech">Tech: Laravel, PHP, MySQL, Blade</span> </div> </div> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"> <i class="fas fa-tasks"></i> </div> <h4>Task Manager System</h4> <p> Laravel & Vue.js based task management system to manage admin roles, task assignment and result submission with secure Sanctum authentication, reporting and RESTful API support. </p> <span class="tech">Tech: Laravel, Vue.js, MySQL, Sanctum, REST API</span> </div> </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h3 class="text-muted">MY SKILLS</h3>
+            <h2>Technologies & Expertise</h2>
+        </div>
+
+       <div class="container"> <div class="row g-4"> <!-- Languages --> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"> <i class="fas fa-code"></i> </div> <h4>Programming Languages</h4> <p>HTML, CSS, PHP, JavaScript, SQL</p> </div> </div> <!-- Frameworks --> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"> <i class="fas fa-layer-group"></i> </div> <h4>Frameworks</h4> <p>Laravel, Vue.js, Bootstrap</p> </div> </div> <!-- Tools --> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"> <i class="fas fa-tools"></i> </div> <h4>Tools & Technologies</h4> <p> Git, GitHub, REST API, MVC Architecture, Authentication, Session Management, Composer, Docker (Basic), Postman, MS Office </p> </div> </div> <!-- Databases --> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"> <i class="fas fa-database"></i> </div> <h4>Databases</h4> <p>MySQL, PostgreSQL, SQLite</p> </div> </div> <!-- Platforms --> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"> <i class="fas fa-desktop"></i> </div> <h4>Platforms</h4> <p>Web, Windows</p> </div> </div> <!-- Soft Skills --> <div class="col-md-6"> <div class="service-card"> <div class="service-icon"> <i class="fas fa-user-check"></i> </div> <h4>Soft Skills</h4> <p> Leadership, Event Management, Writing, Public Speaking, Time Management </p> </div> </div> </div>
+    </div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h3 class="text-muted">EXPERIENCE</h3>
+            <h2>Where I Worked</h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="service-card">
+                    <i class="fas fa-headset service-icon"></i>
+                    <h4>Support Engineer</h4>
+                    <p>Millennium Computers & Networking</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h4>GSoC Student Developer</h4>
+                    <p>Submitty – REST API & performance refactor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--contact end-->
+    <!--footer-->
+ <!-- Contact -->
+
+<section id="contact" class="services">
+  <div class="container py-5">
+    <div class="text-center mb-4">
+      <h2>Contact Me</h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form action="#" method="post">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input class="form-control" type="text" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input class="form-control" type="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4" required></textarea>
+          </div>
+
+          <button class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="services">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h3 class="text-muted">CONTACT</h3>
+            <h2>Get In Touch</h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <i class="fas fa-envelope service-icon"></i>
+                    <h5>Email</h5>
+                    <p>saminy170@gmail.com</p>
+                </div>
+            </div>
+
+            
+
+            <div class="col-md-4">
+                <div class="service-card">
+                    <i class="fab fa-github service-icon"></i>
+                    <h5>GitHub</h5>
+                    <p>
+                        <a href="https://github.com/saminyasar8" target="_blank">
+                            github.com/saminyasar8
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Location -->
+            <div class="col-md-4">
+                <h4>Location</h4>
+                <p>
+                    House #1, Road #2 <br>
+                    Block #A, Mirpur-1 <br>
+                    Dhaka-1216
+                </p>
+
+                <iframe class="img-fluid rounded-4 mt-2"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.702490576647!2d90.35385844999999!3d23.794562699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2zTWlycHVyLTEsIOCmouCmvuCmleCmvg!5e0!3m2!1sbn!2sbd!4v1747043326749!5m2!1sbn!2sbd"
+                    style="border:0;" allowfullscreen loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-4">
+                <h4>Contact</h4>
+                <p>Email: saminy170@gmail.com</p>
+                
+            </div>
+
+            <!-- Social -->
+            <div class="col-md-4">
+                <h4>Follow Me</h4>
+                <a href="https://www.facebook.com/ahsamin.yasar.9" class="btn btn-outline-light btn-sm me-2 mb-2">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/Swee_tCandi" class="btn btn-outline-light btn-sm me-2 mb-2">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                
+            </div>
+
+        </div>
+
+        <hr class="border-secondary mt-4">
+
+        <p class="text-center mb-0">
+            © 2025 Samin Yasar | PHP Laravel Developer
+        </p>
+    </div>
+</footer>
+
+    
+
+    
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
